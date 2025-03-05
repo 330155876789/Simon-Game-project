@@ -90,31 +90,31 @@ for(btn of allbtns){
     btn.addEventListener('click',btnpress);
 }
 
-let score=0;
-let highscore=localStorage.getItem('highscore')||0;
+// let score=0;
+// let highscore=localStorage.getItem('highscore')||0;
 
-console.log('current score:',score)
-console.log('High Score:',highscore)
+// console.log('current score:',score)
+// console.log('High Score:',highscore)
 
-function updatescore(){
-    score=level;
-    console.log('score:',score)
-    if(score>highscore){
-         highscore=score;
-         localStorage.setItem('highscore',highscore);
-         console.log('New hclearigh score:',highscore);
-         let printHighscore=document.querySelector('.highscore')
-        printHighscore.innerHTML=`Your Highscore:${highscore}`;
+// function updatescore(){
+//     score=level;
+//     console.log('score:',score)
+//     if(score>highscore){
+//          highscore=score;
+//          localStorage.setItem('highscore',highscore);
+//          console.log('New hclearigh score:',highscore);
+// //          let printHighscore=document.querySelector('.highscore')
+//         printHighscore.innerHTML=`Your Highscore:${highscore}`;
 
-    }
-}
+//     }
+// }
 
 function reset(){
     started=false;
     gameseq=[];
     userseq=[];
      level=0;
-     updatescore();
+    //  updatescore();
 }
 
  
